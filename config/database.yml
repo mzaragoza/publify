@@ -29,7 +29,7 @@ development:
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user that initialized the database.
-  #username: publify
+  #username: restaurantequipmentpro
 
   # The password associated with the postgres role (username).
   #password:
@@ -73,13 +73,4 @@ test:
 #
 #   DATABASE_URL="postgres://myuser:mypass@localhost/somedatabase"
 #
-# You can use this database configuration with:
-#
-#   production:
-#     url: <%= ENV['DATABASE_URL'] %>
-#
-production:
-  <<: *default
-  database: publify_production
-  username: publify
-  password: <%= ENV['PUBLIFY_DATABASE_PASSWORD'] %>
+
